@@ -9,7 +9,7 @@ const port = 3000
 
 
 app.get('/', (req, res) => {
-   res.send('Hello World!')
+   res.send('<h1>Hello, go to weather..</h1>')
 })
 
 app.get('/weather', (req, res) => {
