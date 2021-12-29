@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000
 
 
 app.get('/', (req, res) => {
-   res.send('<h1>Hello, go to weather..</h1>')
+   res.send('<h1>Hello, go to weather..</h1><p>this is first p</p>')
 })
 
 app.get('/weather', (req, res) => {
