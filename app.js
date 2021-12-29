@@ -27,6 +27,8 @@ app.get('/weather', (req, res) => {
       else {
 
 
+         //some changes
+
          const lat = data.center[1];
          const lon = data.center[0];
 
