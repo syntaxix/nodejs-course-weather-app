@@ -2,14 +2,13 @@
 const getWeather = require("./utils/forecast")
 const geocode = require("./utils/geocode")
 
-
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
 
 
 app.get('/', (req, res) => {
-   res.send('<h1>Hello, go to weather..</h1><p>this is first p</p>')
+   res.send('<h1>Hello, go to weather..</h1><p>this is first p</p><p>Second paragrpah</p><p>Second paragrpah 333</p>')
 })
 
 app.get('/weather', (req, res) => {
@@ -25,8 +24,6 @@ app.get('/weather', (req, res) => {
          return res.send({ "error": "this is error.." });
       }
       else {
-
-
          //some changes
 
          const lat = data.center[1];
